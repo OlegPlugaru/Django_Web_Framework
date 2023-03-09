@@ -9,6 +9,7 @@ from products.views import (
 
 urlpatterns = [
     path('blog/', include('Blog.urls')),
+    path('courses/', include('courses.urls')),
     path('products/', include('products.urls')),
     path('', home_view, name='home'),
     path('contact/', contact_view, name='contact'),
